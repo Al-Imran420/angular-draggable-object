@@ -1,0 +1,71 @@
+.snippets_view_area {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  background-color: #df6161;
+  display: inline-flex;
+}
+.drag_container {
+  width: 100%;
+  height: 100%;
+  background-color: #618ddf;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+}
+.drag_container li {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  color: #313131;
+  border-radius: 4px;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.drag_item_one {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  height: 175px;
+}
+.drag_item_two {
+  position: relative;
+  list-style: none;
+  width: 90%;
+  height: 150px;
+}
+.drag_item_three {
+  position: relative;
+  list-style: none;
+  width: 80%;
+  height: 125px;
+}
+.example-handle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #555555;
+}
+
+/* Drag Drop Default CSS */
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.cdk-drag-placeholder {
+  opacity: 1;
+}
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.example-box:last-child {
+  border: none;
+}
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+.cdk-drop-list-dragging .cdk-drag {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
